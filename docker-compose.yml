@@ -1,0 +1,8 @@
+  version: '3.4'
+  services:
+    recipe-maker-api:
+      build:
+        context : ./RecipeMakerApi
+
+      command: /bin/sh -c "while sleep 1000; do :; done"
+      restart: on-failure
